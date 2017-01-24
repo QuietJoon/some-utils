@@ -21,13 +21,13 @@ retryThisWhileUntil def num f chk =
   #ifdef LIMITEDDEBUG
   assert (chk def) $
   #endif
-    do
-      v <- retryThisWhileUntilSub f chk num
+    retryThisWhileUntilSub f chk num
+  where
+    retryThisWhileUntilSub f chk 0 = do
+      v <- f
       return $ if chk v then def else v
-      where
-        retryThisWhileUntilSub f chk 0 = f
-        retryThisWhileUntilSub f chk num = do
-          v <- f
-          if chk v
-            then retryThisWhileUntilSub f chk (num-1)
-            else return v
+    retryThisWhileUntilSub f chk num = do
+      v <- f
+      if chk v
+        then retryThisWhileUntilSub f chk (num-1)
+        else return v
