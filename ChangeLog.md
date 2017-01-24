@@ -1,5 +1,9 @@
 # Revision history for some-utils
 
+## 0.1.0.3 -- 2017/01/24
+
+* Simplify `retryThisWhileUntil` more.
+
 ## 0.1.0.2  -- 2017/01/24
 
 * Simplify `retryThisWhileUntil` and fix trivial bug.
