@@ -7,6 +7,8 @@ module Control.Monad.Util where
 import Control.Exception
 #endif
 
+rtw :: forall (m :: * -> *) b. Monad m => m b -> (b -> Bool) -> m b
+rtw = retryThisWhile
 {-# INLINE retryThisWhile #-}
 retryThisWhile :: forall (m :: * -> *) b. Monad m => m b -> (b -> Bool) -> m b
 retryThisWhile f chk = do
@@ -15,6 +17,8 @@ retryThisWhile f chk = do
     then retryThisWhile f chk
     else return v
 
+rtwu :: forall (m :: * -> *) b. Monad m => b -> Int -> m b -> (b -> Bool) -> m b
+rtwu = retryThisWhileUntil
 {-# INLINE retryThisWhileUntil #-}
 retryThisWhileUntil :: forall (m :: * -> *) b. Monad m => b -> Int -> m b -> (b -> Bool) -> m b
 retryThisWhileUntil def num f chk =
