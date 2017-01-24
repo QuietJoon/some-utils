@@ -23,9 +23,7 @@ retryThisWhileUntil def num f chk =
   #endif
     retryThisWhileUntilSub num
   where
-    retryThisWhileUntilSub 0 = do
-      v <- f
-      return $ if chk v then def else v
+    retryThisWhileUntilSub 0 = return def
     retryThisWhileUntilSub num = do
       v <- f
       if chk v
