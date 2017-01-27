@@ -1,4 +1,5 @@
 some-utils
 ====
 
-Utility functions for me.
+Some utility functions just for me.
+This library may covers functions in wide ranges.
