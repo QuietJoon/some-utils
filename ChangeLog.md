@@ -1,5 +1,9 @@
 # Revision history for some-utils
 
+## 0.1.1.0  -- 2017/02/21
+
+* Add a breif module.
+
 ## 0.1.0.5  -- 2017/01/24
 
 * Add shorthand function because original's names are too long.
