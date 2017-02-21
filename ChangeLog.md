@@ -2,6 +2,10 @@
 
 ## 0.1.1.0  -- 2017/02/21
 
+* Add `putStr*` from `String` as `Text`. Inspired from concurrent program.
+
+## 0.1.1.0  -- 2017/02/21
+
 * Add a breif module.
 
 ## 0.1.0.5  -- 2017/01/24
