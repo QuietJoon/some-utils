@@ -1,5 +1,10 @@
 # Revision history for some-utils
 
+## 0.2.0.0  -- 2017/02/21
+
+* Change `putStr*` to `putAs*`.
+* Add `putErrAs*`.
+
 ## 0.1.1.0  -- 2017/02/21
 
 * Add `putStr*` from `String` as `Text`. Inspired from concurrent program.
