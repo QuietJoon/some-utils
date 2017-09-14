@@ -1,5 +1,11 @@
 # Revision history for some-utils
 
+
+## 0.4.0.0 -- 2017/09/15
+
+* Add `filterComment*`
+* Add `readFileTL*WithHandle`
+
 ## 0.3.0.0  -- 2017/09/14
 
 * Add `readFileTL*`.
