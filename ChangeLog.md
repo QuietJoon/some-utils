@@ -1,5 +1,9 @@
 # Revision history for some-utils
 
+## 0.3.0.0  -- 2017/09/14
+
+* Add `readFileTL*`.
+
 ## 0.2.0.0  -- 2017/02/21
 
 * Change `putStr*` to `putAs*`.
