@@ -22,9 +22,9 @@ rtwu = retryThisWhileUntil
 {-# INLINE retryThisWhileUntil #-}
 retryThisWhileUntil :: forall (m :: * -> *) b. Monad m => b -> Int -> m b -> (b -> Bool) -> m b
 retryThisWhileUntil def num f chk =
-  #ifdef LIMITEDDEBUG
+#ifdef LIMITEDDEBUG
   assert (chk def) $
-  #endif
+#endif
     retryThisWhileUntilSub num
   where
     retryThisWhileUntilSub 0 = return def

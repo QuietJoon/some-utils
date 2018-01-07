@@ -1,6 +1,11 @@
 # Revision history for some-utils
 
 
+## 0.4.0.1 -- 2018/01/07
+
+* Add missing dependencies
+* Fix CPP indent
+
 ## 0.4.0.0 -- 2017/09/15
 
 * Add `filterComment*`
