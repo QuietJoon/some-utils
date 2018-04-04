@@ -1,6 +1,13 @@
 # Revision history for some-utils
 
 
+## 0.5.0.0 -- 2018/03/29
+
+* [Breaking] `retryThisWhileUntil` does not require default value always.
+  To replace this, `retryThisWhileUntilDefault` is introduced.
+  `retryThisWhileUntil` provide the result of the last trying.
+* Introduce `retryThisWhileUntilM` for `Maybe`
+
 ## 0.4.0.1 -- 2018/01/07
 
 * Add missing dependencies
