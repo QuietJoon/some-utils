@@ -47,7 +47,7 @@
 ## [0.1.1.0] -- 2017-02-21
 
 ### Added
-* Add a breif module.
+* Add a brief module.
 
 ## [0.1.0.5] -- 2017-01-24
 
@@ -80,4 +80,4 @@
 * `retryThisWhile` & `retryThisWhileUntil`
   * Functions to retry monadic function until a return value satisfies the given function.
   * `retryThisWhileUntil` is given to avoid infinite loop.
-* `>>==` is reverse version of `.` for non-fuctor functions. (Was it non-applicative? non-monadic?)
+* `>>==` is reverse version of `.` for non-functor functions. (Was it non-applicative? non-monadic?)
