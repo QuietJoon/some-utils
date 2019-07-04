@@ -1,4 +1,5 @@
-# Revision history for some-utils
+ChangeLog for some-utils
+====
 
 ## [Unreleased]
 
